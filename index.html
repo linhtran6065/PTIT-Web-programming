@@ -13,6 +13,10 @@
             max-width: 600px;
             margin: auto;
         }
+        .header {
+            text-align: center; /* Căn giữa tiêu đề */
+            margin: 20px 0; /* Thêm một chút khoảng cách trên và dưới tiêu đề */
+        }
         form {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -41,7 +45,9 @@
 </head>
 <body>
     <div class="container">
-        <h2>Nhập Thông Tin Sinh Viên</h2>
+        <div class="header">
+            <h2>Nhập Thông Tin Sinh Viên</h2>
+        </div>
         <form id="studentForm">
             <label for="studentId">Mã SV:</label>
             <input type="text" id="studentId" required>
@@ -60,7 +66,9 @@
             
             <button type="button" onclick="addStudent()">Thêm Sinh Viên</button>
         </form>
-        <h2>Danh Sách Sinh Viên</h2>
+        <div class="header">
+            <h2>Danh Sách Sinh Viên</h2>
+        </div>
         <table id="studentTable" border="1">
             <tr>
                 <th>Mã SV</th>
